@@ -1,0 +1,27 @@
+\section{Frozen Lake MDP}
+
+Now you will implement value iteration and policy iteration for the  \href{https://www.gymlibrary.dev/environments/toy_text/frozen_lake/}{Frozen Lake} environment
+from OpenAI Gym. We have provided
+custom versions of this environment in the starter code.
+
+For each of the following questions you may assume that the stopping tolerance (defined as $\max_s \mid V_{old}(s) - V_{new}(s) \mid $) is tol = $10^{-3}$ and $\gamma = 0.9$.
+
+For this question, the state value function in Eqn. \ref{eqn:frozen_v} could be used since the state transition probability $p$ is stochastic
+
+\begin{equation}\label{eqn:frozen_v}
+    V_{k}^{\pi}(s) = \sum_{s',r} p(s',r|s,a)[r + \gamma V_{k-1}^{\pi}(s')], \qquad \forall s \in S
+\end{equation}
+
+\begin{enumerate}[(a)]
+
+	\input{04-frozen-lake/01-policy-evaluation}
+
+	\input{04-frozen-lake/02-policy-improvement}
+
+	\input{04-frozen-lake/03-policy-iteration}
+
+	\input{04-frozen-lake/04-value-iteration}
+
+	\input{04-frozen-lake/05-stochastic-environment}
+
+\end{enumerate}

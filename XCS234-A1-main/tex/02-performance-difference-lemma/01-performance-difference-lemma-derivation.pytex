@@ -1,0 +1,38 @@
+\item \points{2a}
+
+You will use the performance difference lemma to solve this problem. Consider an MDP where the state space $\mathcal S$ is partitioned into two sets of states $\mathcal S^+$ and its complement $\overline{\mathcal S}^+$.
+\begin{align*}
+\begin{split}
+&\mathcal S  = \mathcal S^+ \cup \overline{\mathcal S}^+ \\
+&\mathcal S^+ \cap \overline{\mathcal S}^+ = \emptyset.
+\end{split}
+\end{align*}
+
+In every state $s \in \mathcal S^+$ there exists an action $a^+$ that leads to the same state with probability 1 and gives a unitary reward:
+\begin{align*}
+    p(s_{t+1} = s \mid s_{t} =s,a_t=a^+) = 1, \quad \quad \quad p(s_{t+1} \neq s \mid s_{t} =s,a_t=a^+) = 0
+\end{align*}
+
+The reward function is always positive. In $\mathcal S^+$ the reward function equals $1$ upon playing $a^+$ and $H$ (where $H$ is a contant representing the horizon of the MDP) upon playing any action $a \neq a^+$.  Therefore in $ \mathcal S^+$
+\begin{align*}
+    r(s,a^+) = 1, \quad   r(s,a) = H, \quad  a \neq a^+
+\end{align*}
+Conversely, in any state $s \not \in S^+$, the reward function is in $[0,1]$ ($\forall s \not \in S^+ \ \ \ \forall a \ \ r(s,a) \in [0,1]$).
+
+Consider a deterministic policy $\pi$ and define a policy $\pi^+$ that takes action $a^+$ in any state $\mathcal S^+$ and is otherwise equal to $\pi$:
+\begin{align*}
+    \pi^+(s) = a^+ \; \text{if} \; s \in \mathcal S^+, \quad \quad \pi^+(s) = \pi(s) \; \text{if} \; s \not\in \mathcal S^+
+\end{align*}
+Intuitively, $\pi$ accumulates higher return than $\pi^+$: in any state in $\mathcal S^+$ the policy $\pi^+$ chooses to take a unitary reward forever instead of a reward of $H$ and then maybe more.
+Using the performance difference lemma show that for any arbitrary initial state $s_{\text{start}}$
+\begin{align*}
+    V^{\pi}_{1}(s_{\text{start}}) \geq  V^{\pi^+}_{1}(s_{\text{start}}).
+\end{align*}
+
+Through rearranging terms you can think of this problem as proving the following identity $V^{\pi^{+}}_{1}(s_{\text{start}}) - V^{\pi}_{1}(s_{\text{start}}) \leq 0$. From this point you may use the Performance Difference Lemma to understand the LHS of the given inequality.
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_2a(.*?)% <SCPD_SUBMISSION_TAG>_2a', f.read(), re.DOTALL)).group(1))
+🐍
+\clearpage

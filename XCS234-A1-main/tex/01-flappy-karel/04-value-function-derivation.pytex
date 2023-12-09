@@ -1,0 +1,25 @@
+\item \points{1d}
+
+
+Consider a general MDP $<\mathcal{S}, \mathcal{A},\mathcal{P},\mathcal{R}, \gamma>$ and in this case assume that the horizon is infinite (so there is no termination). A policy $\pi$ in
+this MDP induces a value function $V^{\pi}$ (lets refer to this as $V^{\pi}_{\text{old}}$ ). Now suppose we have the same MDP where all rewards have a constant $c$ added to them and then have been scaled by a constant $a$ (i.e. $r_{\text{new}} = a(c+ r)$). Can you come up with an expression for the new value function $V^{\pi}_{\text{new}}$ induced by $\pi$ in this second MDP in terms of $V^{\pi}_{\text{old}}, c, a$, and $\gamma$? \\
+
+You can start this question with the expression for the original value function and consider how this expression would change for scaled rewards:
+\begin{align*}
+V^{\pi}_{\text{old}}(s) = \E_{\pi}[G_{\text{old},t} \mid x_{t} = s]
+\end{align*}
+Where the return is defined as the discounted sum of rewards: 
+\begin{align*}
+G_{\text{old},t} = r_{t+1} + \gamma r_{t+2} + \gamma^{2} r_{t+3} + ... = \sum^{\infty}_{k=0} \gamma^{k} r_{t+k+1}
+\end{align*}
+
+Now consider how we would rewrite the following expression in terms of the original:
+\begin{align*}
+V^{\pi}_{\text{new}}(s) = \E_{\pi}[G_{\text{new},t} \mid x_{t} = s] 
+\end{align*}
+Where $G_{\text{new},t}$ is comprised of the rewards which have been translated and scaled.
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_1d(.*?)% <SCPD_SUBMISSION_TAG>_1d', f.read(), re.DOTALL)).group(1))
+🐍

@@ -1,0 +1,11 @@
+\item \points{1a}
+
+Let $r_s \in \{-4,-1,0,1\}$. Starting in \textbf{square 2}, for each of the possible values of $r_s$ briefly explain what the optimal policy would be in Flappy World 1. In each case is the optimal policy unique and does the optimal policy depend on the value of the discount factor $\gamma \in [0,1]$? Explain your answer. 
+
+\textit{Hint: The fact that actions are deterministic should reduce the overall amount of calculation required.}
+
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_1a(.*?)% <SCPD_SUBMISSION_TAG>_1a', f.read(), re.DOTALL)).group(1))
+🐍

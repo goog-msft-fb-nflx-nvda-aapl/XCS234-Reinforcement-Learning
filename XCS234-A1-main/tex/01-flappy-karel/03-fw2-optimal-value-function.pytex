@@ -1,0 +1,46 @@
+\item \points{1c}
+
+Now consider Flappy World 2. It is the same as Flappy World 1, except there are no walls on the right and left sides. Going past the right end of Flappy World 2 simply loops you to left hand side. Take a look at Figure \ref{fig:fig2.b} for a successful run by Karel in Flappy World 2.  
+
+  \begin{figure}[ht]
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    % include first image
+    \includegraphics[width=.8\linewidth]{images/FlappyWorld2.pdf}  
+    \caption{Flappy World 2}
+    \label{fig:fig2.a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    % include second image
+    \includegraphics[width=.8\linewidth]{images/FlappyWorld2_.pdf}  
+    \caption{A successful run by Karel in Flappy World 2}
+    \label{fig:fig2.b}
+  \end{subfigure}
+  \caption{}
+  \label{fig:fig2}
+  \end{figure}
+
+Let $r_s \in \{-4,-1,0,1\}$. Starting in \textbf{square 3}, for each of the possible values of $r_s$:
+
+\begin{itemize}
+  \item Briefly explain what the optimal policy would be in Flappy World 2?
+\end{itemize}
+
+Once again consider different grids and grid shading (without walls at either end similar to Flappy World 2) in which the green target square is reacheable from the starting square.
+
+\begin{itemize}
+  \item What is the value of $r_s$ that would cause the optimal policy to return the shortest path to the green target square for all cases?
+
+  \item Find the optimal value for each square in Flappy World 2 using the value of $r_s$, that would cause the optimal policy to return the shortest path to the green target square for all cases?
+
+  \item What is the optimal action from square 27?
+\end{itemize}
+
+
+\textit{Hint: There are three possible long-term behaviours, terminate through a red square, terminate through a green square and do not ever terminate. Consider these cases when formulating the optimal policy for each value of $r_{s}$.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_1c(.*?)% <SCPD_SUBMISSION_TAG>_1c', f.read(), re.DOTALL)).group(1))
+🐍

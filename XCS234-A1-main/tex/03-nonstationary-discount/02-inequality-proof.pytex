@@ -1,0 +1,12 @@
+\item \points{3b}
+
+Using the above inequality prove that:
+\begin{align*}
+\| B_1B_2 \cdots B_K V_K -  B_1B_2 \cdots B_K V'_K \|_\infty
+\leq \gamma_1 \gamma_2 \cdots \gamma_K \|V_K - V'_K \|_\infty
+\end{align*}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_3b(.*?)% <SCPD_SUBMISSION_TAG>_3b', f.read(), re.DOTALL)).group(1))
+🐍

@@ -1,0 +1,19 @@
+\item \points{3c}
+
+Unfortunately $\gamma_k \approx 1$ when $k$ is large so you cannot conclude that the convergence occurs exponentially fast. However, the error still shrinks. Show that:
+\begin{align*}
+  \gamma_1 \gamma_2 \cdots \gamma_K = \frac{1}{K+1}
+\end{align*}
+which allows you to write
+\begin{align*}
+\| B_1B_2 \cdots B_K V_K -  B_1B_2 \cdots B_K V'_K \|_\infty \leq \frac{1}{K+1} \|V_K - V'_K \|_\infty
+\end{align*}
+and ensure convergence, albeit at a slower rate.
+
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_3c(.*?)% <SCPD_SUBMISSION_TAG>_3c', f.read(), re.DOTALL)).group(1))
+🐍
+
+\clearpage

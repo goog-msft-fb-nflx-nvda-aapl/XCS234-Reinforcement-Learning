@@ -1,0 +1,12 @@
+\item \points{3a}
+
+Similarly to what you've done in class, show that the Bellman operator with non-stationary discount factor at time step k is still a contraction, i.e.,  
+\begin{align*}
+\| B_k V - B_k V' \|_\infty
+\leq \gamma_k \|V_k - V_{k}' \|_\infty
+\end{align*}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_3a(.*?)% <SCPD_SUBMISSION_TAG>_3a', f.read(), re.DOTALL)).group(1))
+🐍

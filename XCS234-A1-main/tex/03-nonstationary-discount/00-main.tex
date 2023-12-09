@@ -1,0 +1,24 @@
+\section{Nonstationary Discount Factor $\gamma$}
+
+In this problem you will consider a variable discount factor $\gamma$. In lectures, we proved that the Bellman backup is a contraction for $\gamma < 1$ in the infinity norm. 
+
+In this problem we consider having a non-stationary discount factor and assume you want to run $K$ iterations of value iteration. Let $V_K$ and $V'_K$ be any two arbitrary initial value functions (at timestep $K$).
+The time-dependent Bellman backup operator $B_k$ for an arbitrary timestep $k$ is defined as
+\begin{align}
+    V_{k-1} \overset{def}{=} B_{k}V_{k} = \max_{a}[ R(s, a) + \gamma_{k}\sum_{s' \in S}p(s' \mid s,a)V_{k}(s')]
+\end{align}
+where
+\begin{align}
+    \gamma_{k} = 1 - \frac{1}{k+1}
+\end{align}
+Notice that the value function index is decreasing: $K,K-1,\dots,2,1$
+
+\begin{enumerate}[(a)]
+
+	\input{03-nonstationary-discount/01-bellman-contraction}
+
+	\input{03-nonstationary-discount/02-inequality-proof}
+
+	\input{03-nonstationary-discount/03-convergence-guarantee}
+
+\end{enumerate}

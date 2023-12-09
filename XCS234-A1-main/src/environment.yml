@@ -1,0 +1,17 @@
+name: XCS234_Default
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.10
+  - notebook=6.5.4
+  - tk=8.6.12
+  - pandas=2.0.3
+  - tensorboard=2.12.1
+  - pyyaml=6.0.1
+  - pip=23.3
+  - pip:
+    - matplotlib==3.7.3
+    - numpy==1.24.4
+    - gym==0.26.2
+    - pygame==2.5.2

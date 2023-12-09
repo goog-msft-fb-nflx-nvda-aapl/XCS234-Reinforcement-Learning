@@ -1,0 +1,67 @@
+{
+  "1a" : {"points":5, "question_id":"1a", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+
+  "1b" : {"points":5, "question_id":"1b", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+
+  "1c" : {"points":5, "question_id":"1c", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+
+  "1d" : {"points":5, "question_id":"1d", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+
+  "1e-0-helper" : {"points":0, "question_id":"1e", "is_written":false, "is_coding":false, "is_online":true, "is_extra_credit":false},
+
+  "1e-1-hidden" : {"points":5, "question_id":"1e", "is_written":false, "is_coding":false, "is_online":true, "is_extra_credit":false},
+
+  "2a" : {"points":10, "question_id":"2a", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+  
+  "3a" : {"points":5, "question_id":"3a", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+  
+  "3b" : {"points":5, "question_id":"3b", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+  
+  "3c" : {"points":5, "question_id":"3c", "is_written":true, "is_coding":false, "is_online":false, "is_extra_credit":false},
+
+  "4a-0-basic" : {"points":1, "question_id":"4a", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4a-1-hidden" : {"points":1, "question_id":"4a", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4a-2-hidden" : {"points":1, "question_id":"4a", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4b-0-basic" : {"points":1, "question_id":"4b", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4b-1-hidden" : {"points":1, "question_id":"4b", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4b-2-hidden" : {"points":1, "question_id":"4b", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4c-0-basic" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  "4c-1-basic" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+  
+  
+  "4c-2-hidden" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4c-3-hidden" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false,"is_extra_credit":false},
+
+  "4c-4-hidden" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4c-5-hidden" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4c-6-hidden" : {"points":1, "question_id":"4c", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-0-basic" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-1-basic" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-2-hidden" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-3-hidden" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-4-hidden" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-5-hidden" : {"points":1, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4d-6-hidden" : {"points":2, "question_id":"4d", "is_written":false, "is_coding":true, "is_online":false, "is_extra_credit":false},
+
+  "4e-0-helper" : {"points":0, "question_id":"4e", "is_written":false, "is_coding":false, "is_online":true, "is_extra_credit":false},
+
+  "4e-1-hidden" : {"points":3, "question_id":"4e", "is_written":false, "is_coding":false, "is_online":true, "is_extra_credit":false}
+
+}
