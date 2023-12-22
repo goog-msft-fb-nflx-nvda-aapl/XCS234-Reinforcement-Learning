@@ -1,0 +1,27 @@
+\section{Tabular Q-Learning}
+
+If the state and action spaces are sufficiently small, we can simply maintain a table containing the value of $Q(s,a)$, an estimate of $Q^*(s,a)$, for every $(s,a)$ pair.
+In this \emph{tabular setting}, given an experience sample $(s, a, r, s')$, the update rule is
+\begin{align*}
+Q(s,a) \leftarrow Q(s,a) + \alpha\left(r + \gamma \max_{a' \in \mathcal{A}}Q(s',a') - Q(s,a)\right)
+\end{align*}
+where $\alpha > 0$ is the learning rate, $\gamma \in [0,1)$ the discount factor.
+
+In addition, to formalizing our update rule for Q-learning in the tabular setting we must also consider strategies for exploration. In this question, we will be considering an $\epsilon$-greedy exploration strategy. This strategy means that each time we look to choose an action $A$, we will do so as follows,
+
+\begin{align*}
+A \leftarrow \begin{cases}
+				argmax_{a \in \mathcal{A}} Q(s,a) \;\; \text{with probability $1-\epsilon$} \\
+				a \in \mathcal{A}  \;\; \text{chosen uniformly at random with probability $\epsilon$}
+			 \end{cases}
+\end{align*}
+
+In the following questions, you will need to implement both the update rule and $\epsilon$-greedy exploration strategy for Q-learning in the tabular setting. 
+
+\begin{enumerate}[(a)]
+
+	\input{03-tabular-q-learning/01-e-greedy}
+
+	\input{03-tabular-q-learning/02-overestimation-bias}
+
+\end{enumerate}

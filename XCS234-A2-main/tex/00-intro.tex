@@ -1,0 +1,48 @@
+\section{Introduction}\label{intro}
+
+In this assignment we will be exploring deep Q-learning. In particular, we will explore the application of deep Q-learning in training an agent to outperform the average human in an Atari game known as Pong! The ultimate goal of this assignment is to demonstrate the effectiveness of combining the reinforcement learning concepts we have learnt thus far with the effectiveness of neural networks as function approximators. In addition, we will convey the importance of some of the techniques used in practice to stabilize training and achieve better performance. \\
+
+Some of the latter questions in this assignment make reference to research papers by \href{https://deepmind.com/}{DeepMind}. Below you may find links to two papers which are closely related to this assignment (Note: questions whose answer requires knowledge from a given paper will contain a link to  the paper within the corresponding question):
+\begin{enumerate}
+  \item \href{https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf}{Human Level Control Through Deep Reinforcement Learning}
+  \item \href{https://arxiv.org/pdf/1312.5602v1.pdf}{Playing Atari with Deep Reinforcement Learning}
+\end{enumerate}
+
+  It is important to note that this assignment contains 3 unique environment configuration files. Below we provide an explanation of each file as well as an outline of when you should use each file:
+
+  \begin{enumerate}
+    \item ~environment.yml~: this is the default conda environment file which can be used for locally testing code associated to Q1-Q6 in the assignment. This is the same environment that is used by our autograder to test your code.
+
+    \item ~environment_cuda.yml~: this conda environment is identical to ~environment.yml~ except that it ensures that the version of Pytorch which is installed is compatible with CUDA. This environment will be used when training models on the Azure vm instance or your local host using a Nvidia GPU.
+  \end{enumerate}
+
+
+
+\textbf{Advice}
+\begin{itemize}
+  \item It takes approximately \textbf{8 hours} to train the DQN used in this assignment on the Atari enviroment (Q7). Be sure to allocate enough time at the end of the assignment to account for this.
+
+  \item In this assignment you will make use of an Azure vm (or alternatively your local machine if it has a powerful GPU). Please make sure to terminate any vm instance you are no longer using to avoid the loss of your allocated GPU time which is limited. Please consult the following \href{https://github.com/scpd-proed/XCS234-Handouts/blob/main/Azure/Azure%20Guide.pdf}{guide} to get started with setting up your vm on Azure.
+
+  \item Throughout the assignment we will be using Pytorch to train our neural networks. It is strongly recommended you become familiar with the basics of Pytorch before starting the coding exercises from Q5 onwards. Please consult our \href{https://colab.research.google.com/drive/1BZ89PnXpzN2US_OxwuQCazucmuTpuIfS?usp=sharing}{Pytorch tutorial} for a full review of Pytorch essentials.
+
+  \item When running ~run.py~ with the dqn model in Q7, please ensure that the submission folder has write permissions for your user so that model weights can be saved there. This can be accomplished on the Azure vm through running ~sudo chmod -R a+rw submission~ from the assignment ~src~ directory.
+
+  \item If you encounter the following error when installing on a MacOS with M1 chip run the following command ~conda install openblas~.
+
+  \begin{lstlisting}
+  bin/../lib/liblapack.3.dylib' (no such file), '/usr/local/lib/liblapack.3.dylib' (no such file), '/usr/lib/liblapack.3.dylib' (no such file)
+  \end{lstlisting}
+\end{itemize}
+
+
+\textbf{Coding Deliverables}
+
+For this assignment, please submit the following files to gradescope to recieve points for coding questions:
+\begin{itemize}
+    \item ~src/submission/__init__.py~
+    \item ~src/submission/q3_schedule.py~
+    \item ~src/submission/q5_linear_torch.py~
+    \item ~src/submission/q6_dqn_torch.py~
+    \item ~src/submission/model.weights~
+\end{itemize}

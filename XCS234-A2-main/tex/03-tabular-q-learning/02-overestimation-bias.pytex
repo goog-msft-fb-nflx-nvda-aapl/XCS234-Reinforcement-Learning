@@ -1,0 +1,19 @@
+\item \points{3b}
+
+We will now examine the issue of overestimation bias in Q-learning. The crux of the problem is that, since we take a max over actions, errors which cause Q to overestimate will tend to be amplified when computing the target value, while errors which cause Q to underestimate will tend to be suppressed.
+
+Assume for simplicity that our Q function is an unbiased estimator of $Q^*$, meaning that $\mathbb{E}[Q(s,a)] = Q^*(s,a)$ for all states $s$ and actions $a$.
+Show that, even in this seemingly benign case, the estimator overestimates the real target in the following sense:
+$$
+\forall s, \quad \mathbb{E}\left[ \max_a Q(s,a) \right] \ge \max_a Q^*(s,a)
+$$
+
+
+\textit{Note: The expectation $\mathbb{E}[Q(s,a)]$ is over the randomness in $Q$ resulting from the stochasticity of the exploration process.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_3b(.*?)% <SCPD_SUBMISSION_TAG>_3b', f.read(), re.DOTALL)).group(1))
+🐍
+
+\clearpage

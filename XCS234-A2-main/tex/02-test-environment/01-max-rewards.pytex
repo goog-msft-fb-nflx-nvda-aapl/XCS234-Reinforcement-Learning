@@ -1,0 +1,10 @@
+\item \points{2a}
+
+What is the maximum sum of rewards that can be achieved in a single trajectory in the test environment, assuming $\gamma = 1$? Show first that this value is attainable in a single trajectory, and then briefly argue why no other trajectory can achieve greater cumulative reward. Please make reference to the properties outlined in the tables [\ref{table:test_spec_1}, \ref{table:test_spec_2}] accompanying this question and note that the episode length is 5 timesteps.
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_2a(.*?)% <SCPD_SUBMISSION_TAG>_2a', f.read(), re.DOTALL)).group(1))
+🐍
+
+\clearpage

@@ -1,0 +1,28 @@
+\item \points{5a}
+
+Suppose we represent the $Q$ function as
+$Q_{\theta}(s, a) = \theta^\top \delta(s,a)$, where $\theta \in \mathbb{R}^{\vert\mathcal{S}\vert \vert \mathcal{A}\vert }$ and $\delta : \mathcal{S} \times \mathcal{A} \rightarrow \mathbb{R}^{\mid \mathcal{S} \mid \mid \mathcal{A} \mid}$ with
+\[
+    [\delta(s,a)]_{s',a'}=\left\{
+                \begin{array}{ll}
+                  1 & \text{ if } s'=s, a'=a\\
+                  0 & \text{otherwise}\\
+                \end{array}
+              \right.
+  \]
+  
+  Compute $\nabla_{\theta} Q_{\theta}(s, a)$ and write the update rule for $\theta$.
+  Argue that equation for the tabular q-learning update rule we saw before:
+  \begin{align*}
+  Q(s,a) \leftarrow Q(s,a) + \alpha\left(r + \gamma \max_{a' \in \mathcal{A}}Q(s',a') - Q(s,a)\right)
+  \end{align*}
+  and the following equation:
+  \begin{align*}
+  \theta \leftarrow \theta + \alpha\left(r+\gamma \max_{a' \in \mathcal{A}} Q_{\theta}(s', a') - Q_{\theta}(s, a)\right) \nabla_{\theta}Q_{\theta}(s, a)
+  \end{align*}
+  are exactly the same when this form of linear approximation is used.
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_5a(.*?)% <SCPD_SUBMISSION_TAG>_5a', f.read(), re.DOTALL)).group(1))
+🐍

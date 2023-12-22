@@ -1,0 +1,21 @@
+\section{Implementing DeepMind's DQN}
+
+We are now ready to implement Deep Mind's DQN using Pytorch.
+
+In the following questions, you will implement the deep Q-network as described in \href{https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf}{Human Level Control Through Deep Reinforcement Learning} by implementing \texttt{initialize\_models} and \texttt{get\_q\_values} in \texttt{q6\_nature\_torch.py}. The rest of the code inherits from what you wrote for linear approximation. 
+
+You will be able to test your implementation locally on the test environment \textbf{using your computer's CPU}  by running:
+
+\begin{lstlisting}
+$ python run.py --config_filename=q6_dqn
+\end{lstlisting} 
+
+\begin{enumerate}[(a)]
+
+	\input{06-implementing-dqn/01-initialize-models}
+
+	\input{06-implementing-dqn/02-get-q-values}
+
+	\input{06-implementing-dqn/03-interpretation-of-results}
+
+\end{enumerate}

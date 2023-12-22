@@ -1,0 +1,14 @@
+\item \points{1a}
+
+Consider a fixed stochastic policy and imagine running several rollouts of this policy within the environment. Naturally, depending on the stochasticity of the MDP $\mathcal{M}$ and the policy itself, some trajectories are more likely than others. Write down an expression for $\rho^\pi(\tau)$, the likelihood of sampling a trajectory $\tau = (s_0,a_0,s_1,a_1,\ldots)$ by running $\pi$ in $\mathcal{M}$.
+
+\textit{Note: Having an expression for this likelihood is very useful in practice. For further context consider the following equation which can be used to calculate the value of particular state $s_{0}$ for a policy $\pi$,}
+
+$$V^\pi(s_0) = \mathbb{E}_{\tau \sim \rho^\pi}\left[\sum\limits_{t=0}^\infty \gamma^t \mathcal{R}(s_t,a_t) \,\mid \, s_0\right]$$
+
+\textit{In practice, we require the distribution of trajectories to evaluate the above expectation. The likelihood expression we derive in this question is useful in describing this distribution.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% <SCPD_SUBMISSION_TAG>_1a(.*?)% <SCPD_SUBMISSION_TAG>_1a', f.read(), re.DOTALL)).group(1))
+🐍
